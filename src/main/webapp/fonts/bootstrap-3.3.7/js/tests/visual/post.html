@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>帖子</title>
+
+  <link rel="stylesheet" href="../../../dist/css/bootstrap.min.css">
+    <!-- Favicon -->
+		<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="../css/signin.css" rel="stylesheet">
+	
+    <!-- Custom CSS -->
+    <link href="../css/main.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="../css/icomoon.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="main-topic">
+						<div class="topic-content-wrapper">
+							<div class="user-header">
+								<div class="row row-insider">
+									<img class="main-topic-user pull-left" src="img/thumb48x48.jpg" alt="User">
+									<div class="user-info-wrapper pull-left">
+										<h4 class="user-name" id="username">James Armstrong</h4>
+										<p class="user-online" id="time">4 hrs ago</p>
+									</div>
+									<a class="pull-right expert">
+								<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;关注</a>
+								</div>
+							</div>
+							<div class="topic-content">
+								<h3 class="topic-theme justify" id="title">南昌美食--瓦罐煨汤</h3>
+								<!--<img class="comment-text" src="http://imgsrc.baidu.com/forum/w%3D580/sign=b0408262b73eb13544c7b7b3961fa8cb/2255b319ebc4b74573e3199cc4fc1e178b8215c0.jpg" />-->
+								
+								<p class="content-text justify" id="text">瓦罐煨汤沿袭民间传统煨汤方法，以土鸡、龟、天麻、猴头菇等为原料，加以天然矿泉水，
+									放入巨型土质陶器瓦缸内，用硬质木炭火恒温煨制达七小时以上。比较著名的有香梨煨老鸭汤（能清燥润肺、养阴清热）、牛蒡煨排骨汤（能清
+									热解暑、补肾强身）、墨鱼猪肚煨排骨（能补脾益气、健脾养血）汤粉店分布在南昌市的大街小巷，遍地都是，价格便宜，市井味十足。深得食
+									客追捧。</p>
+							</div>
+						</div>
+						<div class="user-footer border-top">
+							<div class="finger-up pull-left border-right">
+								<span class="icon-ic_thumb_up_24px"></span>
+							</div>
+							
+							<div class="finger-down pull-left border-right">
+								<span class="icon-ic_thumb_down_24px color-red"></span>
+							</div>
+							<div class="rating pull-left border-right">
+								<span class="a1" onclick="fun8()"><a class="glyphicon glyphicon-star star-2" type="button" style="text-decoration: none;color: #cccccc"></a></span>
+								<span class="user-rating"></span>
+							</div>
+							<div class="btn-wrapper pull-right">
+								<button type="button" class="btn btn-primary">转发</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-topic">
+						<div class="topic-content-wrapper border-bottom">
+
+							<div class="row">
+								<div class="form-group">
+									
+									<img class="sub-topic-user pull-left" src="img/thumb48x48.jpg" alt="User">
+									<div class="col-md-9">
+										
+										<input type="text" class="form-control" placeholder="Leave Your Comment" id="reply_content">
+									</div>
+									<button class="btn btn-success" type="button" onclick="fun6()" autocomplete="off">发送</button>
+									<span id="errorMsg4" style="color: #ff0000"></span>
+								</div>
+							</div>
+							
+						</div>
+
+						<div class="answer-wrapper border-bottom">
+							<h5 class="pull-left" id="totalCount1">21 Answers</h5>
+							<ul>
+								<li class="dropdown pull-right comment-sort-wrapper">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sort by <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li><a href="#">Date</a></li>
+			            <li><a href="#">Time</a></li>
+			            <li><a href="#">Something else here</a></li> 
+			          </ul>
+			        </li>
+			        </ul>
+						</div>
+
+						<!-- 评论块 1 -->
+						<ul id="allValues1">
+							<!--<li>
+						<div class="sub-topic-content-wrapper">
+							<div class="user-header">
+								<div class="row row-insider">
+									<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">
+									<div class="user-info-wrapper pull-left">
+										<h4 class="user-name">Diana Rodriguez</h4>
+										<p class="user-online">4 hrs ago</p>
+									</div>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="user-rating">234</span>
+									<p class="pull-right expert">EXPERT</p>
+								</div>
+							</div>
+							<div class="topic-content" style="widht:100%;height:100%;word-wrap: break-word">
+								<p class="comment-text justify">Dear Driend, we are planning to form a group of 6 members for buying the insightsonindia test series. If you are inerested to join in our group means send me your mail id so that i can contact you at the earliest</p>
+								
+								&lt;!&ndash; 指向 回复方框 &ndash;&gt;
+								<p>&nbsp;
+								  <a class="pull-right" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">
+								  	  回复
+								  	<span>(1)</span>
+								  </a>
+									<span class="user-online pull-right">2017-10-03 11:16&nbsp;&nbsp;&nbsp;</span>
+								</p>
+								&lt;!&ndash; 回复方框 &ndash;&gt;
+								<div class="collapse" id="collapse1">
+								<div class="row border-bottom">
+						        <div class="col-md-12">
+						          <div class="col-md-12 form-group">  
+												<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">
+												<p class=""><a>Diana Rodriguez</a>:&nbsp;<span>Dear Driend</span></p>
+												<p>
+												  <a class="pull-right" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">
+												  	  回复
+												  </a>
+													<span class="user-online pull-right">2017-10-03 11:16&nbsp;&nbsp;&nbsp;</span>
+												</p>
+						          </div>
+						        </div>
+						        <div class="col-md-12">
+						          <div class="col-md-12 form-group">  
+												<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">
+												<p class=""><a>Diana Rodriguez</a>:&nbsp;<span>Dear Driend</span></p>
+												<p>
+												  <a class="pull-right" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">
+												  	  回复
+												  </a>
+													<span class="user-online pull-right">2017-10-03 11:16&nbsp;&nbsp;&nbsp;</span>
+												</p>
+						          </div>
+						        </div>
+						        <div class="col-md-12">
+						          <div class="col-md-12 form-group">  
+												<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">
+												<p class=""><a>Diana Rodriguez</a>:&nbsp;<span>Dear Driend</span></p>
+												<p>
+												  <a class="pull-right" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">
+												  	  回复
+												  </a>
+													<span class="user-online pull-right">2017-10-03 11:16&nbsp;&nbsp;&nbsp;</span>
+												</p>
+						          </div>
+						        </div>
+								</div></br>
+
+								
+								<div class="row">
+						        <div class="col-md-12">
+						          <div class="input-group col-md-12">  
+						            <input type="text" class="form-control" style="opacity: 0.8" placeholder="">  
+						          </div>
+							      </div>
+							    </div></br>
+							    &lt;!&ndash;发表按钮&ndash;&gt;
+									<div class="row">
+					        	<div class="col-md-2 pull-right">
+					            <button type="submit" style="opacity: 0.8" class="btn btn-sm btn-primary form-control" value="reset">发表</button>
+					          </div>
+							    </div>
+								</div>
+							</div> 	
+						</div>
+						<div class="border-bottom" style="margin-top: -20px;"></div>
+							</li>-->
+						</ul>
+						<!-- 评论块 2 -->
+						<!--<div class="sub-topic-content-wrapper">
+							<div class="user-header">
+								<div class="row row-insider">
+									<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">
+									<div class="user-info-wrapper pull-left">
+										<h4 class="user-name">Diana Rodriguez</h4>
+										<p class="user-online">4 hrs ago</p>
+									</div>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="user-rating">234</span>
+									<p class="pull-right expert">EXPERT</p>
+								</div>
+							</div>
+							<div class="topic-content" style="widht:100%;height:100%;word-wrap: break-word">
+								<p class="comment-text justify">Dear Driend, we are planning to form a group of 6 members for buying the insightsonindia test series. If you are inerested to join in our group means send me your mail id so that i can contact you at the earliest</p>
+								
+								<p>&nbsp;
+								  <a class="pull-right" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">
+								  	  回复
+								  	<span>(1)</span>
+								  </a>
+									<span class="user-online pull-right">2017-10-03 11:16&nbsp;&nbsp;&nbsp;</span>
+								</p>
+								&lt;!&ndash;  回复块 &ndash;&gt;
+								<div class="collapse" id="collapse2">
+									<div class="row border-bottom">
+						        <div class="col-md-12">
+						          <div class="col-md-12 form-group">  
+												<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">
+												<p class=""><a>Diana Rodriguez</a>:&nbsp;<span>Dear Driend</span></p>
+												<p>
+												  <a class="pull-right" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">
+												  	  回复
+												  </a>
+													<span class="user-online pull-right">2017-10-03 11:16&nbsp;&nbsp;&nbsp;</span>
+												</p>
+						          </div>
+						        </div>
+							</div></br>
+								<div class="row">
+						        <div class="col-md-12">
+						          <div class="input-group col-md-12">  
+						            <input type="text" class="form-control" style="opacity: 0.8" placeholder="">  
+						          </div>
+							      </div>
+							    </div></br>
+
+							    &lt;!&ndash;发表按钮&ndash;&gt;
+									<div class="row">
+					        	<div class="col-md-2 pull-right">
+					            <button type="submit" style="opacity: 0.8" class="btn btn-sm btn-primary form-control" value="reset">发表</button> 
+					          </div>
+							    </div>
+								</div>
+							</div> 	
+						</div>
+
+						<div class="border-bottom" style="margin-top: -20px;"></div>
+						&lt;!&ndash;&ndash;&gt;
+
+						</div>
+						</div>
+					</div>-->
+
+				<!--分页-->
+				<nav aria-label="Page navigation">
+				  <ul class="pagination" id="pageNum1">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+				<!--分页结束-->
+
+				</div>
+			</div>
+		</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<!--<script>window.jQuery || document.write('<script src="/js/tests/vendor/jquery.min.js"><\/script>')</script>-->
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../vendor/jquery.min.js"></script>
+		<script src="../../transition.js"></script>
+		<script src="../../modal.js"></script>
+		<script src="../../tooltip.js"></script>
+		<script src="../../popover.js"></script>
+		<script src="../../collapse.js"></script>
+		<script src="../../carousel.js"></script>
+		<script src="../../dropdown.js"></script>
+		<script src="../../tab.js"></script>
+		<script src="../../collapse.js"></script>
+
+  <script>
+//收藏
+	  var star = document.querySelector( '.star-2');
+	  star.onclick = function(){
+	  	star.style.color = '#dada17';
+	  }
+
+
+	  $(function () {
+
+		  let search = location.search;
+		  let id = search.split("=")[1];
+
+		  $.get("/postServlet",{id:id},function (content){
+			  $("#username").html(content.username);
+		  	  $("#title").html(content.title);
+			  $("#text").html(content.text);
+			  $("#time").html(content.createtime);
+
+
+			  load1(id);
+		  })
+
+
+	  })
+	  function load1(id,currentPage){
+		  $.get("/answerOutServlet",{},function (list) {
+
+		  $.get("/replyPageServlet",{id:id,currentPage:currentPage},function (pb) {
+			  let a = "共" + pb.totalCount + "条评论"
+			  $("#totalCount1").html(a);
+
+			  var lis = "";
+			  var beforeNum = pb.currentPage - 1;
+			  if (beforeNum <= 0) {
+				  beforeNum = 1;
+			  }
+			  var first = '<li>\n' +
+					  '\t\t\t\t      <a href="javascript:load1('+id+','+beforeNum+')" aria-label="Previous">\n' +
+					  '\t\t\t\t        <span aria-hidden="true">&laquo;</span>\n' +
+					  '\t\t\t\t      </a>\n' +
+					  '\t\t\t\t    </li>';
+			  lis += first;
+			  for (let i = 1; i <= pb.totalPage; i++) {
+				  var li;
+				  if (pb.currentPage == i) {
+					  li = '<li class="active"><a href="javascript:load1('+id+','+i+')">' + i + '</a></li>';
+				  } else {
+					  li = '<li><a href="javascript:load1('+id+','+i+')">' + i + '</a></li>';
+				  }
+
+				  lis += li;
+			  }
+			  var nextNum = pb.currentPage + 1;
+			  if (nextNum > pb.totalPage) {
+				  nextNum = pb.totalPage;
+			  }
+			  var last = '<li>\n' +
+					  '\t\t\t\t      <a href="javascript:load1('+id+','+nextNum+')" aria-label="Next">\n' +
+					  '\t\t\t\t        <span aria-hidden="true">&raquo;</span>\n' +
+					  '\t\t\t\t      </a>\n' +
+					  '\t\t\t\t    </li>';
+			  lis += last;
+
+			  $("#pageNum1").html(lis);
+
+			  var comment_lis = "";
+			  for (let i = 0; i < pb.list.length; i++) {
+				  var comment = pb.list[i];
+				  var comment_li='<li>\n' +
+						  '\t\t\t\t\t\t<div class="sub-topic-content-wrapper">\n' +
+						  '\t\t\t\t\t\t\t<div class="user-header">\n' +
+						  '\t\t\t\t\t\t\t\t<div class="row row-insider">\n' +
+						  '\t\t\t\t\t\t\t\t\t<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">\n' +
+						  '\t\t\t\t\t\t\t\t\t<div class="user-info-wrapper pull-left">\n' +
+						  '\t\t\t\t\t\t\t\t\t\t<h4 class="user-name">'+comment.username+'</h4>\n' +
+						  '\t\t\t\t\t\t\t\t\t\t<p class="user-online"></p>\n' +
+						  '\t\t\t\t\t\t\t\t\t</div>\n' +
+						  '\t\t\t\t\t\t\t\t\t<span class="glyphicon glyphicon-star"></span>\n' +
+						  '\t\t\t\t\t\t\t\t\t<span class="user-rating">234</span>\n' +
+						  '\t\t\t\t\t\t\t\t\t<p class="pull-right expert">EXPERT</p>\n' +
+						  '\t\t\t\t\t\t\t\t</div>\n' +
+						  '\t\t\t\t\t\t\t</div>\n' +
+						  '\t\t\t\t\t\t\t<div class="topic-content" style="widht:100%;height:100%;word-wrap: break-word">\n' +
+						  '\t\t\t\t\t\t\t\t<p class="comment-text justify">'+comment.content+'</p>\n' +
+						  '\t\t\t\t\t\t\t\t\n' +
+						  '\t\t\t\t\t\t\t\t<!-- 指向 回复方框 -->\n' +
+						  '\t\t\t\t\t\t\t\t<p>&nbsp;\n' +
+						  '\t\t\t\t\t\t\t\t  <a class="pull-right" data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">\n' +
+						  '\t\t\t\t\t\t\t\t  \t  回复\n' +
+						  '\t\t\t\t\t\t\t\t  \t<span>(1)</span>\n' +
+						  '\t\t\t\t\t\t\t\t  </a>\n' +
+						  '\t\t\t\t\t\t\t\t\t<span class="user-online pull-right">'+comment.time+'&nbsp;&nbsp;&nbsp;</span>\n' +
+						  '\t\t\t\t\t\t\t\t</p>\n' +
+						  '\t\t\t\t\t\t\t\t<!-- 回复方框 -->\n'+
+						  '<div class="collapse" id="collapse'+i+'">\n' +
+						  '\t\t\t\t\t\t\t\t<div class="row border-bottom">'
+
+				  comment_lis += comment_li;
+
+				  for (let j = 0; j < list.length; j++) {
+					  if (comment.id == list[j].comment_id){
+					  var li1 ='<div class="col-md-12">\n' +
+							  '\t\t\t\t\t\t          <div class="col-md-12 form-group">  \n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t<img class="main-topic-user pull-left" src="img/thumb42x42.jpg" alt="User">\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t<p class=""><a>'+list[j].username+'</a>:&nbsp;<span>'+list[j].content+'</span></p>\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t<p>\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t  <a class="pull-right" aria-expanded="false" aria-controls="collapseExample" style="margin-right: 10px;">\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t  \t  回复\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t  </a>\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t\t<span class="user-online pull-right">'+list[j].time+'&nbsp;&nbsp;&nbsp;</span>\n' +
+							  '\t\t\t\t\t\t\t\t\t\t\t\t</p>\n' +
+							  '\t\t\t\t\t\t          </div>\n' +
+							  '\t\t\t\t\t\t        </div>'
+					  }else {
+					  	li1 = '';
+					  }
+
+					  $("#collapse").append(li1);
+					  comment_lis += li1;
+				  }
+				  var li2 ='<div class="row">\n' +
+						  '\t\t\t\t\t\t        <div class="col-md-12">\n' +
+						  '\t\t\t\t\t\t          <div class="input-group col-md-12">  \n' +
+						  '\t\t\t\t\t\t            <input type="text" class="form-control" style="opacity: 0.8" placeholder="">  \n' +
+						  '\t\t\t\t\t\t          </div>\n' +
+						  '\t\t\t\t\t\t\t      </div>\n' +
+						  '\t\t\t\t\t\t\t    </div></br>'+
+						  '\t\t\t\t\t\t\t    <!--发表按钮-->\n' +
+						  '\t\t\t\t\t\t\t\t\t<div class="row">\n' +
+						  '\t\t\t\t\t        \t<div class="col-md-2 pull-right">\n' +
+						  '\t\t\t\t\t            <button type="button" style="opacity: 0.8" class="btn btn-sm btn-primary form-control" id="button'+i+'" onclick="fun7('+comment.id+','+i+')">发表</button>\n' +
+						  '\t\t\t\t\t          </div>\n' +
+						  '\t\t\t\t\t\t\t    </div>\n' +
+						  '\t\t\t\t\t\t\t\t</div>\n' +
+						  '\t\t\t\t\t\t\t</div> \t\n' +
+						  '\t\t\t\t\t\t</div>\n' +
+						  '\t\t\t\t\t\t<div class="border-bottom" style="margin-top: -20px;"></div>\n'+
+						  '\t\t\t\t\t\t\t</li>'
+
+				  comment_lis += li2;
+
+				  $("#allValues1").html(comment_lis);
+
+			  }
+
+		  })
+	  })
+	  }
+	  function fun7(comment_id,nid){
+		  var reply = "";
+		  var inputArray=$("input");
+		  if (nid == 0){
+
+				  var input=inputArray[1];
+				  reply = input.value;
+
+		  }
+		  if(nid == 1){
+
+				  var input=inputArray[2];
+				  reply = input.value;
+
+		  }
+		  if (nid == 2){
+
+				  var input=inputArray[3];
+				  reply = input.value;
+
+		  }
+		  function flash() {
+			  window.location.reload();
+		  }
+		  //alert(reply);
+		  $.ajax({
+			  dataType: "json",
+			  // 提交方式 get 或 post
+			  type: "post",
+			  // 需要访问的 Servlet 的映射路径 urlPatterns
+			  url: "/answerServlet",
+			  data: {
+				  comment_id: comment_id,
+				  content: reply
+			  },
+
+			  success: function (data) {
+				  if (data.flag) {
+					  $("#errorMsg5").html("");
+
+					  alert("回复发表成功");
+					  setTimeout(flash());
+
+				  } else {
+					  $("#errorMsg5").html(data.errorMsg);
+				  }
+
+			  }
+		  })
+
+	  }
+	  function fun6() {
+		  let content = $("#reply_content").val();
+		  let search = location.search;
+		  let id = search.split("=")[1];
+
+		  function flash() {
+			  window.location.reload();
+		  }
+
+		  $.ajax({
+			  dataType: "json",
+			  // 提交方式 get 或 post
+			  type: "post",
+			  // 需要访问的 Servlet 的映射路径 urlPatterns
+			  url: "/replyServlet",
+			  data: {
+				  id: id,
+				  content: content
+			  },
+
+			  success: function (data) {
+				  if (data.flag) {
+					  $("#errorMsg4").html("");
+
+					  alert("评论发表成功");
+					  setTimeout(flash());
+
+				  } else {
+					  $("#errorMsg4").html(data.errorMsg);
+				  }
+
+			  }
+		  })
+
+	  }
+	  function fun8(){
+		  let search = location.search;
+		  let content_id = search.split("=")[1];
+
+		  $.get("/favoriteFindServlet",{content_id:content_id},function (a){
+		  	if(a == true){
+				$.get("/favoriteServlet",{content_id:content_id},function (data1){
+					if (data1.flag){
+						alert("收藏成功")
+					}else {
+						alert("请先登录")
+					}
+				})
+			}else{
+		  		alert("该文章已收藏")
+			}
+		  })
+	  }
+
+
+  </script>
+		</div>>
+  </body>
+</html>

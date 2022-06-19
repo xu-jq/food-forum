@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/fonts/bootstrap-3.3.7/js/tests/visual/index.html" value="file://$PROJECT_DIR$/src/main/webapp/fonts/bootstrap-3.3.7/js/tests/visual" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/fonts/bootstrap-3.3.7/js/tests/visual/personal.html" value="file://$PROJECT_DIR$/src/main/webapp/fonts/bootstrap-3.3.7/js/tests/visual" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/fonts/bootstrap-3.3.7/js/tests/visual/post.html" value="file://$PROJECT_DIR$/src/main/webapp/fonts/bootstrap-3.3.7/js/tests/visual" />
+      </map>
+    </option>
+  </component>
+</project>

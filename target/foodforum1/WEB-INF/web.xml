@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+    <servlet>
+        <servlet-name>RegistUserServlet</servlet-name>
+        <servlet-class>com.xu.servlet.RegistUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistUserServlet</servlet-name>
+        <url-pattern>/registUserServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CheckCodeServlet</servlet-name>
+        <servlet-class>com.xu.servlet.CheckCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckCodeServlet</servlet-name>
+        <url-pattern>/checkCode</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.xu.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FindUserServlet</servlet-name>
+        <servlet-class>com.xu.servlet.FindUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindUserServlet</servlet-name>
+        <url-pattern>/findUserServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EmailServlet</servlet-name>
+        <servlet-class>com.xu.servlet.EmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmailServlet</servlet-name>
+        <url-pattern>/emailServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CodeServlet</servlet-name>
+        <servlet-class>com.xu.servlet.CodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CodeServlet</servlet-name>
+        <url-pattern>/codeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReleasedServlet</servlet-name>
+        <servlet-class>com.xu.servlet.ReleasedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReleasedServlet</servlet-name>
+        <url-pattern>/releasedServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RouteServlet</servlet-name>
+        <servlet-class>com.xu.servlet.RouteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RouteServlet</servlet-name>
+        <url-pattern>/routeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PostServlet</servlet-name>
+        <servlet-class>com.xu.servlet.PostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostServlet</servlet-name>
+        <url-pattern>/postServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ReplyServlet</servlet-name>
+        <servlet-class>com.xu.servlet.ReplyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReplyServlet</servlet-name>
+        <url-pattern>/replyServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ReplyPageServlet</servlet-name>
+        <servlet-class>com.xu.servlet.ReplyPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReplyPageServlet</servlet-name>
+        <url-pattern>/replyPageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AnswerServlet</servlet-name>
+        <servlet-class>com.xu.servlet.AnswerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnswerServlet</servlet-name>
+        <url-pattern>/answerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AnswerOutServlet</servlet-name>
+        <servlet-class>com.xu.servlet.AnswerOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnswerOutServlet</servlet-name>
+        <url-pattern>/answerOutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PersonalServlet</servlet-name>
+        <servlet-class>com.xu.servlet.PersonalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PersonalServlet</servlet-name>
+        <url-pattern>/personalServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ContentServlet</servlet-name>
+        <servlet-class>com.xu.servlet.ContentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContentServlet</servlet-name>
+        <url-pattern>/contentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecommendServlet</servlet-name>
+        <servlet-class>com.xu.servlet.RecommendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecommendServlet</servlet-name>
+        <url-pattern>/recommendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PersonalReplyServlet</servlet-name>
+        <servlet-class>com.xu.servlet.PersonalReplyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PersonalReplyServlet</servlet-name>
+        <url-pattern>/personalReplyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FavoriteFindServlet</servlet-name>
+        <servlet-class>com.xu.servlet.FavoriteFindServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FavoriteFindServlet</servlet-name>
+        <url-pattern>/favoriteFindServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FavoriteServlet</servlet-name>
+        <servlet-class>com.xu.servlet.FavoriteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FavoriteServlet</servlet-name>
+        <url-pattern>/favoriteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FavoriteOutServlet</servlet-name>
+        <servlet-class>com.xu.servlet.FavoriteOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FavoriteOutServlet</servlet-name>
+        <url-pattern>/favoriteOutServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
